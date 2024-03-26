@@ -1,0 +1,6 @@
+<div class="container">
+  <app-imagem [aberto]="biscoitoQuebrado" ></app-imagem>
+  <app-frase [oculto]="!biscoitoQuebrado"></app-frase>
+  <app-botao [primario]="true" texto="Quebrar Biscoito" (click)="quebrar()" [desabilitado]="biscoitoQuebrado"></app-botao>
+  <app-botao [primario]="false" texto="Reiniciar Biscoito" (click)="reiniciar()" [desabilitado]="!biscoitoQuebrado"></app-botao>
+</div>
